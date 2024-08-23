@@ -66,6 +66,46 @@
 - **Marge:** Combinar o fusionar ramas de código en un proyecto.
 - **Repositorio Remoto:** Un repositorio almacenado en GitHub que puede ser accedido desde cualquier lugar.
 
+# 📚 Conceptos Importantes
+
+## 🖥️ Servidor
+Es una computadora o software que proporciona servicios, recursos o datos a otros dispositivos (clientes).
+
+## 🌐 DNS
+El Sistema de Nombres de Dominio (DNS) es un sistema que traduce nombres de dominio como `www.juanito.com` en direcciones IP como `192.168.1.1`.
+
+## 🔤 Dominio
+Nombre que identifica al sitio web.
+
+## 🔌 Puertos
+Son puntos de conexión en un servidor que permiten la comunicación entre diferentes aplicaciones. Cada servicio o aplicación utiliza un puerto específico, como el puerto 80 para HTTP y el 443 para HTTPS.
+
+## 📡 Protocolos
+Son conjuntos de reglas que definen cómo se transmiten y reciben datos a través de una red.
+
+## 🆔 Direcciones IP
+Son identificadores únicos asignados a cada dispositivo en una red que permiten la comunicación entre ellos.
+
+---
+
+# 🛠️ Extensiones Útiles para Visual Studio Code
+
+| Extensión | Descripción |
+|-----------|-------------|
+| **Andromeda** | Un tema inspirado en la galaxia de Andrómeda, con colores brillantes y llamativos para una apariencia moderna. |
+| **Auto Import** | Sugiere y añade automáticamente las importaciones necesarias para lenguajes como JavaScript, TypeScript, etc., agilizando el proceso de importación de módulos. |
+| **Blackbox AI Code Generation** | Utiliza inteligencia artificial para generar fragmentos de código basados en instrucciones en lenguaje natural. |
+| **Bootstrap v4 Snippets** | Proporciona fragmentos de código predefinidos para Bootstrap 4, facilitando la creación rápida de interfaces web. |
+| **Bracket Pair Color DLW** | Colorea los pares de corchetes, llaves y paréntesis en diferentes colores, mejorando la lectura y depuración de código. |
+| **CodeSnap** | Permite capturar y generar imágenes de fragmentos de código, con un estilo visual agradable para compartir. |
+| **Color Highlight** | Resalta los colores en tu código con el color correspondiente, facilitando la visualización de colores en el código. |
+| **ES7 + React/Redux/React-Native Snippets** | Proporciona fragmentos de código optimizados para el desarrollo con React, Redux, y React Native. |
+| **Live Server** | Lanza un servidor local y refresca automáticamente el navegador al guardar los cambios en tus archivos. |
+| **Auto Rename Tag** | Cambia automáticamente el nombre de la etiqueta de cierre cuando modificas la etiqueta de apertura en HTML/XML. |
+| **Auto Close Tag** | Añade automáticamente la etiqueta de cierre al escribir una etiqueta de apertura en HTML o XML. |
+| **Prettier Code Formatter** | Formatea automáticamente el código según reglas establecidas, mejorando la consistencia y legibilidad. |
+
+
 ## 🔄 Recordatorio de HTML
 
 Repasaremos la estructura básica de una página web utilizando HTML, enfocándonos en la correcta organización del código.
