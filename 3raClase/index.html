@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=heade, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 align="center">3ra Clase web II</h1>
+    </header>
+    <section>
+        <article>
+            <h2>Artciulo 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos blanditiis esse earum, soluta ex odit eius culpa similique totam a. Vero voluptates voluptate temporibus, officia sit debitis? Laboriosam, inventore corrupti!
+            Eveniet quisquam cupiditate, eos inventore aut sed fugit, mollitia, culpa quia maxime molestias quos quasi tempore! Excepturi, necessitatibus deleniti, libero ipsa dolorum ab debitis ex dolores provident culpa sequi doloribus.</p>
+            <hr>
+            <img src="img.jpg" alt="imagen">
+        </article>
+        <hr>
+        <article>
+            <h2>Articulo 2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, obcaecati tempore aspernatur, vel ducimus atque molestiae rerum sed sapiente fugiat est ullam reprehenderit, inventore tempora earum veritatis error soluta dolore.</p>
+        </article>
+        <hr>
+
+        <article>
+            <h2>Articulo 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa autem, sit nulla ut et ex, minus laboriosam obcaecati doloremque quidem reiciendis praesentium aperiam iste non facere mollitia quo quam dolorem.</p>
+        </article>
+    </section>
+    <h1>Formularios</h1>
+    <form action="/formulario" method="GET">
+        <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" placeholder="Ingresa nombre" value="Pepito">
+    <br>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido">
+    <br>
+    <label for="edad">Edad</label>
+    <input type="number" id="edad" min="0" max="17">
+    <br>
+    <label for="">Contraseña</label>
+    <input type="password">
+    <input type="date">
+    <input type="time">
+    
+    <input type="color">
+    <input type="range" >
+    <input type="file" multiple>
+    <input type="email">
+    <input type="week">
+    <input type="month">
+    <br>
+    <label for="verde">Verde</label>
+    <input type="radio" id="verde" name="color">
+
+    <label for="rojo">rojo</label>
+    <input type="radio" id="rojo" name="color">
+
+    <label for="negro">Negro</label>
+    <input type="radio" id="negro" name="color">
+
+    <input type="checkbox">
+
+    <br>
+    <select name="" id="">
+        <option value="">Opcion 1</option>
+        <option value="">Opcion 2</option>
+        <option value="">Opcion 3</option>
+    </select>
+    <textarea name="" id=""></textarea>
+    <button type="submit">Enviar</button>
+    </form>
+    <h1>Listas</h1>
+    <ul>
+        <li>Listas desordenada 1</li>
+        <li>Listas desordenada 2</li>
+        <li>Listas desordenada 3</li>
+    </ul>
+    <ol>
+        <li value="0">listas ordenadas 4</li>
+        <li>listas ordenadas 5</li>
+        <li>
+            <ul>
+                <li style="list-style-type:lower-alpha ;">sub lista 1</li>
+                <li>sub lista 2</li>
+                <li>sub lista 3</li>
+            </ul>
+        </li>
+    </ol>
+    <h1>Tablas Anidadas</h1>
+    <table border="1px">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Pepito</td>
+            <td>Quispe</td>
+            <td>17</td>
+        </tr>
+        <tr>
+            <td>Pepe</td>
+            <td>Quispe</td>
+            <td>
+                <table>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <section>
+        <h1>PDF</h1>
+        <iframe src="practica.pdf" frameborder="0" height="250px" ></iframe>
+    </section>
+    <section>
+        <h2>Ubicación</h2>
+        <iframe src="https://maps.google.com/maps?q=umsa&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" allowfullscreen></iframe>
+    </section>
+    <h1>Tabla</h1>
+    <table  border="1">
+
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+        </tr>
+        <tr>
+            <td colspan="2">1</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td rowspan="2">6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+    </table>
+    <footer>
+        <a href="mailto: alefrvg@gmail.com">CLick aqui</a>
+    </footer>
+    <h1>Cajas</h1>
+    <div class="principal">
+        <div class="padre">
+            <div class="hijo">
+                Centro
+            </div>
+        </div>
+    </div>
+    <h1>Emoji asombrado</h1>
+    <div class="main">
+        <div class="emoji">
+            <div class="ojo izquierdo"></div>
+            <div class="ojo derecho"></div>
+            <div class="boca"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
