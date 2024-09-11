@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="css/ejer3.css">
+
+</head>
+<body>
+    <!-- los campos obligatorios son nombre, correo y nivel de satisfaccion, cuando se llene uno de esos la barra de progreso va aumentando -->
+    <section>
+        <form id="formularioEncuesta">
+            <label for="nombre" class="obligatorio">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="correo" class="obligatorio">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$">
+            
+            <label>Género:</label>
+            <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+            <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+            
+            <label>Intereses:</label>
+            <div class="intereses">
+                <label><input type="checkbox" name="intereses" value="tecnologia"> Tecnología</label>
+                <label><input type="checkbox" name="intereses" value="deportes"> Deportes</label>
+                <label><input type="checkbox" name="intereses" value="musica"> Música</label>
+                <label><input type="checkbox" name="intereses" value="cine"> Cine</label>
+                <label><input type="checkbox" name="intereses" value="otros" id="checkboxOtros"> Otros</label>
+            </div>
+            
+            <div id="campoOtros" style="display: none;">
+                <label for="otrosTexto">Especificar Otros:</label>
+                <input type="text" id="otrosTexto" name="otrosTexto">
+            </div>
+            
+            <label for="satisfaccion" class="obligatorio">Nivel de Satisfacción:</label>
+            <select id="satisfaccion" name="satisfaccion" required>
+                <option value="">Seleccione...</option>
+                <option value="1">Muy Insatisfecho</option>
+                <option value="2">Insatisfecho</option>
+                <option value="3">Neutro</option>
+                <option value="4">Satisfecho</option>
+                <option value="5">Muy Satisfecho</option>
+            </select>
+            
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+            
+            <progress value="0" max="100"></progress>
+            <button type="submit" id="botonEnviar" disabled>Enviar</button>
+        </form>
+    </section>
+
+    <script>
+        const formulario = document.getElementById('formularioEncuesta');
+        const botonEnviar = document.getElementById('botonEnviar');
+        const barraProgreso = document.querySelector('progress');
+        const checkboxOtros = document.getElementById('checkboxOtros');
+        const campoOtros = document.getElementById('campoOtros');
+
+        formulario.addEventListener('input', () => {
+            const camposRequeridos = Array.from(formulario.querySelectorAll('input[required], select[required]'));
+            const camposCompletados = camposRequeridos.filter(campo => campo.value.trim() !== '').length;
+            const valorProgreso = (camposCompletados / camposRequeridos.length) * 100;
+
+            barraProgreso.value = valorProgreso;
+            botonEnviar.disabled = valorProgreso !== 100;
+        });
+
+        formulario.addEventListener('submit', (event) => {
+            event.preventDefault();
+            alert('Formulario enviado exitosamente.');
+            formulario.reset();
+            barraProgreso.value = 0;
+            botonEnviar.disabled = true;
+        });
+
+        checkboxOtros.addEventListener('change', () => {
+            campoOtros.style.display = checkboxOtros.checked ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>
