@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error{
+            color: green;
+        }
+        input{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form id="Formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required>
+        <br>
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo" required>
+        <br>
+
+        <button type="submit">Enviar</button>
+        <p id="mensajeErrorP" class="error"></p>
+    </form>
+
+    <script>
+        document.getElementById('Formulario').addEventListener('submit', function(event){
+            event.preventDefault();
+
+            const nombre = document.getElementById('nombre').value;
+            const edad = document.getElementById('edad').value;
+            const correo = document.getElementById('correo').value;
+
+            const mensajeErrorP = document.getElementById('mensajeErrorP');
+            mensajeErrorP.textContent = '';
+
+            if(edad <16){
+                mensajeErrorP.textContent = 'Tienes que tener mas de 16 años';
+                return;
+            }
+            if(nombre.trim()===''){
+                mensajeErrorP.textContent = 'El campo nombre es obligatorio';
+                return;
+            }
+            alert("Formulario enviado existosamente");
+        })
+    </script>
+</body>
+</html>
