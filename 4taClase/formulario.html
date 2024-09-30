@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: cursive;
+            background-color: aliceblue;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            text-align: center;
+        }
+        label{
+            display: block;
+            margin: 10px 0 5px 0;
+        }
+        section{
+            margin: 50px;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .obligatorio:after{
+            content: '*';
+            color: red;
+        }
+        input,textarea,select{
+            border-radius: 6px;
+            border: 1px solid gray;
+            padding: 4px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 90%;
+        }
+        progress{
+            width: 100%;
+            margin: 15px 0px 15px 0px;
+        }
+        button{
+            color: white;
+            background-color: black;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <section class="principal">
+        <form action="" id="formulario">
+            <h1>Formulario</h1>
+            <label for="nombre" class="obligatorio">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo" class="obligatorio">Correo</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label>Genero</label>
+            <label><input type="radio" name="genero" value="masculino">Masculino</label>
+            <label><input type="radio" name="genero" value="femenino">Femenino</label>
+
+            <label>Intereses</label>
+            <div class="intereses">
+                <label><input type="checkbox" name="intereses" value="Tecnologia">Tecnologia</label>
+                <label><input type="checkbox" name="intereses" value="Musica">Musica</label>
+                <label><input type="checkbox" name="intereses" value="Deportes">Deportes</label>
+                <label><input type="checkbox" name="intereses" value="otros" id="checkboxOtros">Otros</label>
+            </div>
+
+            <div id="campoOtros" style="display: none;">
+                <label for="otrosTexto">Especifique otros</label>
+                <input type="text" id="otrosTexto" name="otrosTexto">
+            </div>
+
+            <label for="satisfaccion" class="obligatorio">NIvel de satisfaccion</label>
+            <select name="satisfaccion" id="satisfaccion" required>
+                <option>Seleccione...</option>
+                <option>Satisfecho</option>
+                <option>Insatisfecho</option>
+                <option>Neutro</option>
+            </select>
+
+            <label for="comentarios"></label>
+            <textarea name="comentarios" id="comentarios" rows="4"></textarea>
+            <progress value="0" max="100"></progress>
+            <button type="submit" id="botonEnviar">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>

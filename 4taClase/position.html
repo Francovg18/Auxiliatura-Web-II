@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: aquamarine;
+        }
+        h1{
+            font-family: cursive;
+            padding: 20px;
+            color: black;
+            text-align: center;
+        }
+        .principal{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+        .emoji{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: relative;
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .ojo{
+            height: 40px;
+            width: 30px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .ojo.derecho{
+            right: 55px;
+            top: 50px;
+        }
+        .ojo.izquierdo{
+            left: 55px;
+            top: 50px;
+        }
+        .boca{
+            height: 60px;
+            width: 60px;
+            background-color: black;
+            border-radius: 50%;
+            bottom: 40px;
+            position: absolute;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Emoji Asombrado</h1>
+    <div class="principal">
+        <div class="emoji">
+            <div class="ojo izquierdo"></div>
+            <div class="ojo derecho"></div>
+            <div class="boca"></div>
+        </div>
+    </div>
+</body>
+</html>
