@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .geometric-layout {
+          background-color: #fff;
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          padding: 0 80px;
+        }
+        
+        .layout-container {
+          align-self: flex-end;
+          z-index: 10;
+          width: 684px;
+          max-width: 100%;
+        }
+        
+        .two-column-layout {
+          display: flex;
+          gap: 20px;
+        }
+        
+        .small-column {
+          width: 33%;
+        }
+        
+        .large-column {
+          width: 67%;
+        }
+        
+        .pink-rectangle {
+          background-color: #ff00aa;
+          width: 228px;
+          height: 192px;
+          margin: 0 auto;
+        }
+        
+        .green-rectangle {
+          background-color: #2eff04;
+          width: 456px;
+          max-width: 100%;
+          height: 192px;
+          margin: 0 auto;
+        }
+        
+        .blue-rectangle {
+          background-color: #2000ac;
+          width: 226px;
+          height: 384px;
+        }
+        
+        .red-rectangle {
+          background-color: #ff0000;
+          width: 455px;
+          max-width: 100%;
+          height: 384px;
+        }
+        
+        .offset-pink {
+          margin: -192px 0 0 114px;
+        }
+        
+        .offset-top {
+          margin-top: -192px;
+        }
+        
+        .align-center {
+          align-self: center;
+        }
+        
+        .align-end {
+          align-self: flex-end;
+        }
+        
+        @media (max-width: 991px) {
+          .geometric-layout {
+            padding: 0 20px;
+          }
+        
+          .two-column-layout {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0;
+          }
+        
+          .small-column,
+          .large-column {
+            width: 100%;
+          }
+        
+          .blue-rectangle {
+            margin-left: 2px;
+          }
+        
+          .blue-rectangle.align-end {
+            margin-right: 2px;
+          }
+        }
+        </style>
+        
+    
+</head>
+<body>
+    <section class="geometric-layout">
+        <div class="layout-container">
+          <div class="two-column-layout">
+            <div class="small-column">
+              <div class="pink-rectangle"></div>
+            </div>
+            <div class="large-column">
+              <div class="green-rectangle"></div>
+            </div>
+          </div>
+        </div>
+        <div class="blue-rectangle offset-top"></div>
+        <div class="green-rectangle align-center offset-top"></div>
+        <div class="blue-rectangle align-end offset-top"></div>
+        <div class="pink-rectangle align-center offset-pink"></div>
+        <div class="red-rectangle offset-top"></div>
+        <div class="green-rectangle align-end offset-top"></div>
+      </section>
+</body>
+</html>

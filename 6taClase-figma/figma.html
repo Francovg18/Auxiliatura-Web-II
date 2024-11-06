@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Tailwind</title>
+    <link href="output.css" rel="stylesheet">
+
+</head>
+<body>
+    <section class="flex overflow-hidden flex-col bg-white">
+        <header class="flex w-full bg-black min-h-[135px] max-md:max-w-full"></header>
+        <main class="z-10 w-full max-md:max-w-full">
+            <div class="flex gap-5 max-md:flex-col">
+                <aside class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
+                    <div class="flex flex-col grow">
+                        <div class="flex shrink-0 bg-red-600 h-[409px]"></div>
+                        <div class="flex shrink-0 bg-cyan-400 h-[292px]"></div>
+                    </div>
+                </aside>
+                <article class="flex flex-col ml-5 w-[49%] max-md:ml-0 max-md:w-full">
+                    <div class="flex flex-col grow max-md:max-w-full">
+                        <div class="flex shrink-0 bg-green-600 h-[136px] max-md:max-w-full"></div>
+                        <div class="flex shrink-0 bg-fuchsia-700 h-[561px] max-md:max-w-full"></div>
+                    </div>
+                </article>
+                <aside class="flex flex-col ml-5 w-[18%] max-md:ml-0 max-md:w-full">
+                    <div class="flex flex-col grow">
+                        <div class="flex shrink-0 bg-indigo-950 h-[541px]"></div>
+                        <div class="flex shrink-0 bg-amber-300 h-[155px]"></div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
