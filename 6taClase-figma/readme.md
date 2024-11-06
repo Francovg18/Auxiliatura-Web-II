@@ -1,6 +1,7 @@
 # 📖 Figma - Guía Completa
 
-![Figma Logo](https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg)
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma Logo" width="100"/>
+
 
 ## 🌟 ¿Qué es Figma?
 
