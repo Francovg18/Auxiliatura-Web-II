@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div {
+            font-weight: bold;
+            font-size: 25px;
+            font-family: cursiva;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #0b202e;
+            padding: 15px;
+        }
+        
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            width: 500px;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+            min-height: 500px; 
+        }
+        
+        .caja {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #3498db;
+            border: 3px solid #fff;
+        }
+        
+        .caja1, .caja3 { flex: 1 1 150px; }
+        .caja2 { flex: 1 1 150px; }
+
+        
+        .caja4 { flex: 1 1 150px; }
+        .caja5 { flex: 1 1 200px; }
+        .caja6 { flex: 1 1 150px; }
+        
+        .caja8 { flex: 1 1 150px; }
+        .caja9 { flex: 1 1 100px; }
+        
+        .contenedor .caja {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .caja:nth-child(2), .caja:nth-child(8) {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+        }
+        
+        .caja:nth-child(5) {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja caja1">1</div>
+        <div class="caja caja2">2</div>
+        <div class="caja caja3">3</div>
+        <div class="caja caja4">4</div>
+        <div class="caja caja5">5</div>
+        <div class="caja caja6">6</div>
+        <div class="caja caja7">7</div>
+        <div class="caja caja8">8</div>
+        <div class="caja caja9">9</div>
+    </div>
+</body>
+</html>

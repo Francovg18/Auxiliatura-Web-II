@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .escena {
+            background-color: black;
+            border: 10px solid white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .fantasmas {
+            display: flex;
+            align-items: center;
+        }
+
+        .fantasma {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            margin: 0 10px;
+        }
+
+        .fantasma::before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background-color: inherit;
+            clip-path: polygon(0% 100%, 25% 0%, 50% 100%, 75% 0%, 100% 100%);
+        }
+
+        .fantasma .ojo {
+            position: absolute;
+            top: 15px;
+            width: 12px;
+            height: 12px;
+            background-color: white;
+            border-radius: 50%;
+            left: 8px;
+        }
+
+        .fantasma .ojo:nth-child(2) {
+            left: 28px;
+        }
+
+        .fantasma .pupila {
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 6px;
+            height: 6px;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .fantasma:nth-child(2) {
+            background-color: pink;
+        }
+
+        .fantasma:nth-child(3) {
+            background-color: lightblue;
+        }
+
+        .fantasma:nth-child(4) {
+            background-color: orange;
+        }
+
+
+
+        .titulo {
+            font-size: 40px;
+            color: rgb(111, 245, 255);
+            font-weight: bold;
+            margin-top: 20px;
+            font-family: 'Comic Sans MS', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="escena">
+            <div class="fantasmas">
+                <div class="fantasma">
+                    <div class="ojo">
+                        <div class="pupila"></div>
+                    </div>
+                    <div class="ojo">
+                        <div class="pupila"></div>
+                    </div>
+                </div>
+                <div class="fantasma">
+                    <div class="ojo">
+                        <div class="pupila"></div>
+                    </div>
+                    <div class="ojo">
+                        <div class="pupila"></div>
+                    </div>
+                </div>
+                <div class="fantasma">
+                    <div class="ojo">
+                        <div class="pupila"></div>
+                    </div>
+                    <div class="ojo">
+                        <div class="pupila"></div>
+                    </div>
+                </div>
+                
+                <div class="fantasma">
+                    <div class="ojo">
+                        <div class="pupila"></div>
+                    </div>
+                    <div class="ojo">
+                        <div class="pupila"></div>
+                    </div>
+                </div>
+                
+                
+
+            </div>
+            <div class="titulo">Figuras</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Cajas Responsivas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .caja {
+            width: 200px; 
+            height: 150px; 
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        
+        .caja:hover {
+            transform: scale(1.05); 
+        }
+        
+        /* tabletas */
+        @media (max-width: 768px) {
+            .caja {
+                width: 45%; 
+            }
+        }
+        
+        /* móviles */
+        @media (max-width: 480px) {
+            .caja {
+                width: 100%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja" style="background-color: #ff5733;">Caja 1</div>
+        <div class="caja" style="background-color: #33c3ff;">Caja 2</div>
+        <div class="caja" style="background-color: #75ff33;">Caja 3</div>
+        <div class="caja" style="background-color: #ff33a1;">Caja 4</div>
+        <div class="caja" style="background-color: #ffcc33;">Caja 5</div>
+        <div class="caja" style="background-color: #33ff57;">Caja 6</div>
+    </div>
+</body>
+</html>

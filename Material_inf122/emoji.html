@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji con Gafas de Sol</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .emoji {
+            width: 200px;
+            height: 200px;
+            background-color: #ffcc4d;
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .gafas {
+            position: absolute;
+            top: 60px;
+            width: 120px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .lente {
+            width: 50px;
+            height: 30px;
+            background-color: black;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .puente {
+            width: 20px;
+            height: 10px;
+            background-color: black;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+            left: 50px;
+        }
+
+    
+        .boca {
+            width: 100px;
+            height: 50px;
+            background-color: #664500;
+            border-radius: 50%/100%;
+            position: absolute;
+            bottom: 40px;
+        }
+
+        .boca::before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 25px;
+            background-color: #ffcc4d;
+            border-radius: 50%;
+            top: -10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="emoji">
+        <div class="gafas">
+            <div class="lente"></div>
+            <div class="puente"></div>
+            <div class="lente"></div>
+        </div>
+        <div class="boca"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patito con CSS</title>
+    <style>
+        body {
+            background-color: #87CEEB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .patito {
+            width: 180px;
+            height: 140px;
+            background-color: #ffeb3b;
+            border-radius: 100px 100px 90px 90px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .cabeza {
+            width: 100px;
+            height: 100px;
+            background-color: #ffeb3b;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+        }
+
+        .ojo {
+            width: 15px;
+            height: 15px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .ojo.izquierdo {
+            top: 30px;
+            left: 25px;
+        }
+
+        .ojo.derecho {
+            top: 30px;
+            left: 55px;
+        }
+
+    
+        .pico {
+            width: 40px;
+            height: 20px;
+            background-color: #ff9800;
+            border-radius: 20px 20px 0 0;
+            position: absolute;
+            top: 55px;
+            left: 30px;
+        }
+
+        .ala {
+            width: 60px;
+            height: 40px;
+            background-color: #ffeb3b;
+            border-radius: 50% / 60%;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            transform: rotate(-20deg);
+            box-shadow: 15px 15px 15px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .pata {
+            width: 20px;
+            height: 30px;
+            background-color: #ff9800;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -10px;
+        }
+
+        .pata.izquierda {
+            left: 50px;
+        }
+
+        .pata.derecha {
+            right: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="patito">
+        <div class="cabeza">
+            <div class="ojo izquierdo"></div>
+            <div class="ojo derecho"></div>
+            <div class="pico"></div>
+        </div>
+        <div class="ala"></div>
+        <div class="pata izquierda"></div>
+        <div class="pata derecha"></div>
+    </div>
+</body>
+</html>
